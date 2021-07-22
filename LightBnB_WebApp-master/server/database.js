@@ -96,7 +96,7 @@ exports.addUser = addUser;
     // console.log(result.rows);
     return result.rows;
   });
-  // return getAllProperties(null, 2);
+ 
 };
 exports.getAllReservations = getAllReservations;
 
@@ -177,7 +177,7 @@ const getAllProperties = (options, limit = 10) => {
 
     if (queriesAdded) {
       queryString = queryString.slice(0, -4);
-      //console.log(queryString);
+    
     }
   }
 
@@ -216,10 +216,7 @@ const addProperty = function(property) {
     return result.rows[0];
   })
 
-  // const propertyId = Object.keys(properties).length + 1;
-  // property.id = propertyId;
-  // properties[propertyId] = property;
-  // return Promise.resolve(property);
+  
 };
 exports.addProperty = addProperty;
 
